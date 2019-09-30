@@ -23,7 +23,7 @@ matrix:
       env: TARGET=i686-apple-darwin CGFEATURES="--features highsierra,elcapitan"
     # test whether docs build on Linux - required for crates.io
     - os: linux
-      script: cargo doc --all-targets --verbose
+      script: cargo doc --verbose
 
 install:
   - rustup target add $TARGET
